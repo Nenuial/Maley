@@ -1,5 +1,6 @@
 ---
 title: Placeholder
+engine: knitr
 params:
   carre: Placeholder
 ---
