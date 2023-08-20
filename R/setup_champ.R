@@ -4,10 +4,8 @@ library(ymlplyr)
 library(googledrive)
 library(googlesheets4)
 
-options(
-  gargle_oauth_cache = ".secrets",
-  gargle_oauth_email = TRUE
-)
+gs4_auth(path = ".secrets/equievents-368612-5bb2b3c9038e.json")
+drive_auth(path = ".secrets/equievents-368612-5bb2b3c9038e.json")
 
 setup_classes <- function(result_path) {
   class_id <- stringr::str_match(result_path, ".*R.{1,2}sultats_(.{1,3})\\.xls")[,2]
