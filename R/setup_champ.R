@@ -191,7 +191,7 @@ dir_ls(here("data/champ"), regexp = ".*R.{1,2}sultats_(.{1,3})\\.xls") -> result
 results |> 
   purrr::walk(setup_classes)
 
-c("Carré A") |> 
+c("Carré A", "Carré B") |> 
   purrr::walk(carre_off)
 
 classes |> 

@@ -128,9 +128,9 @@ dir_ls(here("data"), regexp = ".*R.{1,2}sultats_(.{1,3})\\.xls") -> results
 results |> 
   purrr::walk(setup_classes)
 
-c("Carré A", "Carré B") |>
-  purrr::walk(carre_off)
-
-classes |>
-  dplyr::filter(stringr::str_detect(Actuel, "Carré")) |>
-  purrr::pwalk(current_classes)
+# c("Carré A", "Carré B") |>
+#   purrr::walk(carre_off)
+# 
+# classes |>
+#   dplyr::filter(stringr::str_detect(Actuel, "Carré")) |>
+#   purrr::pwalk(current_classes)
